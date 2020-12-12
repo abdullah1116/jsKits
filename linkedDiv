@@ -7,6 +7,7 @@ const linkedDiv = () => {
             ele.addEventListener('click', () => {
                 window.location = href;
             });
+            ele.style.cursor = 'pointer';
         }
     }
 };
