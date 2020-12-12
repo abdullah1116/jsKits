@@ -1,0 +1,13 @@
+const linkedDiv = () => {
+    let elements = document.getElementsByTagName('div');
+    for (var i = 0, elLength = elements.length - 1; i < elLength; i++) {
+        let el = elements[i];
+        let href = el.getAttribute('href');
+        if (href) {
+            el.addEventListener('click', () => {
+                window.location = href;
+            });
+        }
+    }
+};
+window.addEventListener('load', () => linkedDiv());
