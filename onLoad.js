@@ -1,1 +1,1 @@
-alert("hi")
+window.sayHi=()=>{alert("hi")}
